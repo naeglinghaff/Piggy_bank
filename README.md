@@ -1,8 +1,14 @@
-# User stories
+# Piggy bank
 
-As a user,
+A ruby program designed using the following user stories. It is expected to allow a user to store, shake and break their piggy bank to access coins.
+
+## User stories
+
+>As a user,
 So that I can save money
 I can put coins in my piggy bank
+
+### Feature test
 
 ``require ''./lib/piggy_bank'
 
@@ -10,34 +16,36 @@ piggy_bank = PiggyBank.new
 piggy_bank.save(4)``
 
 
-
-As a user,
+>As a user,
 So that I know whether there are coins in my piggy bank
 I can shake it, and it will “cling” if there is money in it
 
-``require './lib/piggy_bank'
-piggy_bank = PiggyBank.new
-piggy_bank.save(5)
+### Feature test
+
+``require './lib/piggy_bank'/n
+piggy_bank = PiggyBank.new/n
+piggy_bank.save(5)/n
 piggy_bank.shake``
 
-Test
 
-As a user,
+>As a user,
 So I can enjoy my hard earned savings
 I can break my piggy bank and get back the number or coins that I had put in
 
-``require './lib/piggy_bank'
-piggy_bank = PiggyBank.new
-piggy_bank.save(5)
-piggy_bank.break
+### Feature test
+
+``require './lib/piggy_bank' /n
+piggy_bank = PiggyBank.new /n
+piggy_bank.save(5) /n
+piggy_bank.break /n
 piggy_bank.shake ``
 
 
-Learning to implement the following rspec syntax:
+### Learning to implement the following rspec syntax:
 
-`describe`
-`* it`
-`* expect( a ).to eq( b )`
-`* expect{ a }.to output( "b" )`
-`* expect{ a }.to raise_error`
-`* expect{ a }.not_to raise_error`
+`describe`/n
+`* it` /n
+`* expect( a ).to eq( b )` /n
+`* expect{ a }.to output( "b" )`/n
+`* expect{ a }.to raise_error`/n
+`* expect{ a }.not_to raise_error`/n
