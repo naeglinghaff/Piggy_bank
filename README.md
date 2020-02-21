@@ -4,9 +4,11 @@ A ruby program designed using the following user stories. It is expected to allo
 
 ## User stories
 
+### Story 1
+
 >As a user,\
 So that I can save money\
-I can put coins in my piggy bank\
+I can put coins in my piggy bank
 
 ### Feature test
 ```
@@ -15,10 +17,11 @@ piggy_bank = PiggyBank.new
 piggy_bank.save(4)
 ```
 
+### Story 2
 
 >As a user,\
 So that I know whether there are coins in my piggy bank\
-I can shake it, and it will “cling” if there is money in it\
+I can shake it, and it will “cling” if there is money in it
 
 ### Feature test
 
@@ -29,6 +32,7 @@ piggy_bank.save(5)/n
 piggy_bank.shake
 ```
 
+### Story 3
 
 >As a user,\
 So I can enjoy my hard earned savings\
