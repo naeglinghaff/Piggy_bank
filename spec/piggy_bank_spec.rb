@@ -16,7 +16,7 @@ require "piggy_bank"
       expect { subject.shake }.not_to raise_error
     end
     it "can't cling when there is no money inside" do
-      @@money = 0
+      @money = 0
       expect { subject.shake }.to raise_error("There are no coins")
     end
 
@@ -26,7 +26,6 @@ require "piggy_bank"
       end
       it 'breaks open and removes the coins from the bank' do
         subject.save(5)
-        puts @@money
         subject.break
         expect {subject.shake}. to raise_error("There are no coins")
       end
