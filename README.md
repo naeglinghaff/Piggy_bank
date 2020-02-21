@@ -4,48 +4,52 @@ A ruby program designed using the following user stories. It is expected to allo
 
 ## User stories
 
->As a user,
-So that I can save money
-I can put coins in my piggy bank
+>As a user,\
+So that I can save money\
+I can put coins in my piggy bank\
 
 ### Feature test
-
-``require ''./lib/piggy_bank'
-
+```
+require ''./lib/piggy_bank'
 piggy_bank = PiggyBank.new
-piggy_bank.save(4)``
+piggy_bank.save(4)
+```
 
 
->As a user,
-So that I know whether there are coins in my piggy bank
-I can shake it, and it will “cling” if there is money in it
+>As a user,\
+So that I know whether there are coins in my piggy bank\
+I can shake it, and it will “cling” if there is money in it\
 
 ### Feature test
 
-``require './lib/piggy_bank'/n
+```
+require './lib/piggy_bank'/n
 piggy_bank = PiggyBank.new/n
 piggy_bank.save(5)/n
-piggy_bank.shake``
+piggy_bank.shake
+```
 
 
->As a user,
-So I can enjoy my hard earned savings
+>As a user,\
+So I can enjoy my hard earned savings\
 I can break my piggy bank and get back the number or coins that I had put in
 
 ### Feature test
 
-``require './lib/piggy_bank' /n
-piggy_bank = PiggyBank.new /n
-piggy_bank.save(5) /n
-piggy_bank.break /n
-piggy_bank.shake ``
+```
+require './lib/piggy_bank'
+piggy_bank = PiggyBank.new
+piggy_bank.save(5)
+piggy_bank.break
+piggy_bank.shake
+```
 
 
 ### Learning to implement the following rspec syntax:
 
-`describe`/n
-`* it` /n
-`* expect( a ).to eq( b )` /n
-`* expect{ a }.to output( "b" )`/n
-`* expect{ a }.to raise_error`/n
-`* expect{ a }.not_to raise_error`/n
+`describe`\
+`* it` \
+`* expect( a ).to eq( b )` \
+`* expect{ a }.to output( "b" )`\
+`* expect{ a }.to raise_error`\
+`* expect{ a }.not_to raise_error`\

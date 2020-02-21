@@ -1,4 +1,5 @@
 class PiggyBank
+
   @@money = 0
 
   def save(coins)
@@ -11,6 +12,7 @@ class PiggyBank
   end
 
   def break
+    "You have #{@@money} coins"
     @@money = 0
   end
 
