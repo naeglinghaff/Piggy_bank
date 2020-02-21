@@ -26,9 +26,9 @@ I can shake it, and it will “cling” if there is money in it
 ### Feature test
 
 ```
-require './lib/piggy_bank'/n
-piggy_bank = PiggyBank.new/n
-piggy_bank.save(5)/n
+require './lib/piggy_bank'
+piggy_bank = PiggyBank.new
+piggy_bank.save(5)
 piggy_bank.shake
 ```
 
